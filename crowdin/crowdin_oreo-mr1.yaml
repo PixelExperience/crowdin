@@ -1,8 +1,8 @@
-# crowdin-mm.yaml
+# crowdin-oreo-mr1.yaml
 #
-# Crowdin configuration file for PureNexus
+# Crowdin configuration file for Pixel Experience
 #
-# Copyright (C) 2016 The PureNexus Project
+# Copyright (C) 2017 Pixel Experience ROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,88 +16,107 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api_key: 012345678900987654321
-base_path: /home/nate/android/aosp/purenexuscmte
-project_identifier: the-purenexus-project
+api_key: <%= ENV['CROWDIN_API_KEY'] %>
+base_path: <%= ENV['CROWDIN_BASE_PATH'] %>
+project_identifier: pixelexperience
 preserve_hierarchy: true
 
 files:
-# Default for PureNexus
+# Default for Pixel Experience
   -
-    source:      '/**/values/purenexus_strings.xml'
+    source:      '/**/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         af: af
         am: am
         ar: ar
-        ast: es-rXA
-        az: az
-        be: be
+        as: as-rIN
+        ast: ast-rES
+        az: az-rAZ
+        be: be-rBY
         bg: bg
-        bn: bn
+        bn: bn-rBD
+        bs: bs-rBA
         ca: ca
         cs: cs
+        cy: cy
         da: da
         de: de
         el: el
+        en-AU: en-rAU
+        en-GB: en-rGB
+        en-IN: en-rIN
+        en-PT: en-rPT
+        eo: eo
         es-ES: es
-        et: et
-        eu: eu
+        es-MX: es-rMX
+        es-US: es-rUS
+        et: et-rEE
+        eu: eu-rES
         fa: fa
         fi: fi
         fr: fr
-        gl: gl
+        fr-CA: fr-rCA
+        fy-NL: fy-rNL
+        gl: gl-rES
+        gu-IN: gu-rIN
         he: iw
         hi: hi
         hr: hr
         hu: hu
-        hy-AM: hy
+        hy-AM: hy-rAM
         id: in
-        is: is
+        is: is-rIS
         it: it
         ja: ja
-        ka: ka
-        km: km
+        ka: ka-rGE
+        kk: kk-rKZ
+        km: km-rKH
+        kn: kn-rIN
         ko: ko
         ku: ku
+        ky: ky-rKG
         lb: lb
-        lo: lo
+        lo: lo-rLA
         lt: lt
         lv: lv
-        ml-IN: ml
-        mn: mn
-        ms: ms
+        mk: mk-rMK
+        ml-IN: ml-rIN
+        mn: mn-rMN
+        mr: mr-rIN
+        ms: ms-rMY
+        my: my-rMM
         nb: nb
-        ne-NP: ne
+        ne-NP: ne-rNP
         nl: nl
-        pa-IN: pa
+        or: or-rIN
+        pa-IN: pa-rIN
         pl: pl
+        pt-PT: pt-rPT
+        pt-BR: pt-rBR
         rm-CH: rm
         ro: ro
         ru: ru
-        si-LK: si
+        si-LK: si-rLK
         sk: sk
         sl: sl
+        sq: sq-rAL
         sr: sr
         sv-SE: sv
         sw: sw
-        ta: ta
+        ta: ta-rIN
+        te: te-rIN
         th: th
         tl: tl
         tr: tr
         ug: ug
         uk: uk
+        ur-PK: ur-rPK
+        uz: uz-rUZ
         vi: vi
+        zh-CN: zh-rCN
+        zh-HK: zh-rHK
+        zh-TW: zh-rTW
         zu: zu
-
-  -
-    source:      '/frameworks/base/packages/DocumentsUI/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  -
-    source:      '/packages/apps/PureNexusSettings/res/values/strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
 
