@@ -122,18 +122,6 @@ files:
         zh-TW: zh-rTW
         zu: zu
 
-
-# CAF telephony strings
-  -
-    source:      '/packages/apps/PhoneCommon/res/values/qtistrings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  -
-    source:      '/packages/services/Telephony/res/values/qtistrings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
 # MotoActions
   -
     source:      '/packages/resources/MotoActions/res/values/custom_strings.xml'
