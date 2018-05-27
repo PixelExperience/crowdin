@@ -20,6 +20,11 @@ python-git is used for Git integration.
 
 Executing
 ---------
+First sync the manifest:
+
+```
+repo init -u https://github.com/PixelExperience/manifest -b oreo-mr1 -m crowdin.xml --depth=1
+```
 Export the following environment variables to set the API keys and the base path.
 Base path should contain all Pixel Experience trees in subfolders, named after Pixel Experience branches:
 
