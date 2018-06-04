@@ -122,14 +122,14 @@ files:
         zh-TW: zh-rTW
         zu: zu
 
-# MotoActions
-  -
-    source:      '/packages/resources/MotoActions/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
 # Updates
   -
     source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+# MusicFX
+  -
+    source:      '/packages/apps/MusicFX/res/values/strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
