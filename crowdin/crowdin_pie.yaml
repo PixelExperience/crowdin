@@ -1,4 +1,4 @@
-# crowdin-oreo-mr1.yaml
+# crowdin-pie-mr1.yaml
 #
 # Crowdin configuration file for Pixel Experience
 #
@@ -122,14 +122,14 @@ files:
         zh-TW: zh-rTW
         zu: zu
 
-# Updates
+# Settings - Plurals
   -
-    source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
+    source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-# MusicFX
+# Updates
   -
-    source:      '/packages/apps/MusicFX/res/values/strings.xml'
+    source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
