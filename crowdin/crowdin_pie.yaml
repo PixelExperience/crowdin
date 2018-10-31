@@ -133,3 +133,10 @@ files:
     source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
+
+# WeatherClient
+  -
+    source:      '/WeatherClient/app/src/main/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
