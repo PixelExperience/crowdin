@@ -8,11 +8,11 @@ automatic commiting to Github and pushing/downloading to/from Crowdin.
 
 Prerequisites
 -------------
-The Ruby variant of crowdin-cli is required for this to work.
+The Java variant of crowdin is required for this to work.
 
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby
-    source /home/your_username/.rvm/scripts/rvm # Add this to your .bashrc file!
-    rvm all do gem install crowdin-cli
+    wget -qO - https://artifacts.crowdin.com/repo/GPG-KEY-crowdin | sudo apt-key add -
+    echo 'deb https://artifacts.crowdin.com/repo/deb/ /' | sudo tee /etc/apt/sources.list.d/crowdin.list > /dev/null
+    sudo apt-get update && sudo apt-get install crowdin
 
 python-git is used for Git integration.
 

@@ -16,8 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api_key: <%= ENV['CROWDIN_API_KEY'] %>
-base_path: <%= ENV['CROWDIN_BASE_PATH'] %>
+api_key_env: CROWDIN_API_KEY
+base_path_env: CROWDIN_BASE_PATH
 project_identifier: pixelexperience
 preserve_hierarchy: true
 

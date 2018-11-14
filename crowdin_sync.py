@@ -7,8 +7,8 @@
 #
 # Copyright (C) 2014-2015 The CyanogenMod Project
 # This code has been modified. Portions copyright (C) 2016, The PAC-ROM Project
-# This code has been modified. Portions copyright (C) 2017, Pixel Experience
-
+# This code has been modified. Portions copyright (C) 2018-2019, The LineageOS Project
+# This code has been modified. Portions copyright (C) 2018-2019, Pixel Experience
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -126,10 +126,10 @@ def parse_args():
 
 
 def check_dependencies():
-    # Check for Ruby version of crowdin-cli
-    cmd = ['gem', 'list', 'crowdin-cli', '-i']
+    # Check for Java version of crowdin
+    cmd = ['dpkg-query', '-W', 'crowdin']
     if run_subprocess(cmd, silent=True)[1] != 0:
-        print('You have not installed crowdin-cli.', file=sys.stderr)
+        print('You have not installed crowdin.', file=sys.stderr)
         return False
     return True
 
@@ -163,7 +163,7 @@ def upload_crowdin(branch, no_upload=False):
         return
 
     print('\nUploading Crowdin source translations')
-    check_run(['crowdin-cli',
+    check_run(['crowdin',
                '--config=%s/crowdin/crowdin_%s.yaml' % (_DIR, branch),
                'upload', 'sources'])
 
@@ -174,7 +174,7 @@ def download_crowdin(base_path, branch, xml, username, no_download=False):
         return
 
     print('\nDownloading Crowdin translations')
-    check_run(['crowdin-cli',
+    check_run(['crowdin',
                '--config=%s/crowdin/crowdin_%s.yaml' % (_DIR, branch),
                'download', '--ignore-match'])
 
@@ -184,7 +184,7 @@ def download_crowdin(base_path, branch, xml, username, no_download=False):
     paths = []
     files = [('%s/crowdin/crowdin_%s.yaml' % (_DIR, branch))]
     for c in files:
-        cmd = ['crowdin-cli', '--config=%s' % c, 'list', 'sources']
+        cmd = ['crowdin', '--config=%s' % c, 'list', 'project']
         comm, ret = run_subprocess(cmd)
         if ret != 0:
             sys.exit(ret)
