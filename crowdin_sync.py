@@ -252,7 +252,7 @@ def main():
     else:
         base_path = os.path.join(os.path.realpath(base_path))
     if not os.path.isdir(base_path):
-        print('CROWDIN_BASE_PATH + branch is not a real directory: c'
+        print('CROWDIN_BASE_PATH is not a real directory: %s'
               % base_path)
         sys.exit(1)
 
