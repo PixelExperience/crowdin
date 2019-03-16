@@ -127,9 +127,3 @@ files:
     source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
-
-# Updates
-  -
-    source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
