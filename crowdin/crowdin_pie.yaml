@@ -24,7 +24,7 @@ preserve_hierarchy: true
 files:
 # Default for Pixel Experience
   -
-    source:      '/**/values/custom_strings.xml'
+    source:      '/**/values/customx_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -121,9 +121,3 @@ files:
         zh-HK: zh-rHK
         zh-TW: zh-rTW
         zu: zu
-
-# Settings - Plurals
-  -
-    source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
