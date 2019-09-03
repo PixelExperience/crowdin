@@ -56,7 +56,7 @@ def run_subprocess(cmd, silent=False):
 
 
 def push_as_commit(base_path, path, name, branch, username):
-    print('Committing %s on branch %s' % (name, branch))
+    print('Committing %s on branch %s' % (name, 'ten-plus'))
 
     # Get path
     path = os.path.join(base_path, path)
@@ -85,7 +85,7 @@ def push_as_commit(base_path, path, name, branch, username):
     # Push commit
     try:
         repo.git.push('ssh://%s@gerrit.pixelexperience.org:29418/%s' % (username, name),
-                      'HEAD:refs/for/%s' % branch)
+                      'HEAD:refs/for/ten-plus')
         print('Successfully pushed commit for %s' % name)
     except:
         print('Failed to push commit for %s' % name, file=sys.stderr)
