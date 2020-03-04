@@ -23,7 +23,7 @@ Executing
 First sync the manifest:
 
 ```
-repo init -u https://github.com/PixelExperience/manifest -b pie -m crowdin.xml --depth=1
+repo init -u https://github.com/PixelExperience/manifest -b ten -m crowdin.xml --depth=1
 ```
 Export the following environment variables to set the API keys and the base path.
 Base path should contain all Pixel Experience trees in subfolders, named after Pixel Experience branches:
