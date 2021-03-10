@@ -184,7 +184,9 @@ files:
         # Romansh
         rm-CH: rm
         # Russian
-        ru: ru
+        ru: ru 
+        # Santali
+        sat: sat
         # Sardinian
         sc: sc-rIT
         # Scottish Gaelic
