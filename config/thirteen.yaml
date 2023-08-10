@@ -288,4 +288,9 @@ files:
     translation: '/packages/resources/devicesettings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  
+  # packages/apps/ParanoidGlyph
+  -
+    source:      '/packages/apps/ParanoidGlyph/res/values/custom_strings.xml'
+    translation: '/packages/apps/ParanoidGlyph/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
